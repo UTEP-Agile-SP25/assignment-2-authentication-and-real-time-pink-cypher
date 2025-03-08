@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h2>Welcome, <span id="username"></span>!</h2>
+
+    <h3>Add a Book</h3>
+    <form id="book-form">
+        <input type="text" id="bookTitle" placeholder="Book Title" required>
+        <input type="text" id="bookAuthor" placeholder="Author" required>
+        <button type="submit">Add Book</button>
+    </form>
+    
+    <h3>Books List</h3>
+    <ul id="books-list"></ul>
+
+    <h3>Add a Song</h3>
+    <form id="song-form">
+        <input type="text" id="songTitle" placeholder="Song Title" required>
+        <input type="text" id="songArtist" placeholder="Artist" required>
+        <button type="submit">Add Song</button>
+    </form>
+    
+    <h3>Songs List</h3>
+    <ul id="songs-list"></ul>
+
+    <button id="logout">Log Out</button>
+
+    <!-- Load JavaScript Files -->
+    <script type="module" src="dist/addusers.bundle.js"></script>
+    <script type="module" src="dist/signout.bundle.js"></script>
+    <script type="module" src="dist/booksongs.bundle.js"></script>
+
+</body>
+</html>

@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Your Profile</h1>
-    <p id="userEmail"></p>
+    <h2>Welcome, <span id="username"></span>!</h2>
+    <button id="logout">Log Out</button>
+    <button id="nextpage">Add Books and Songs</button>
 
-    <h2>Update Profile Name</h2>
-    <form id="profileForm">
-        <input type="text" id="displayName" placeholder="Enter your name" required>
-        <button type="submit">Save</button>
-    </form>
+    <script type="module" src="dist/addusers.bundle.js"></script>
+    <script type="module" src="dist/signout.bundle.js"></script>
 
-    <button id="signoutButton">Sign Out</button>
-
-    <script type="module" src="index.js"></script>
+    <script>
+        document.getElementById("nextpage").addEventListener("click", () => {
+            window.location.href = "booksSongs.html";  // Redirect to bookSongs.html
+        });
+    </script>
 </body>
 </html>
