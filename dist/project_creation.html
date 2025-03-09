@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1dfc7;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 0px, 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Profile Creation Manager Page</h1>
+
+    <div id="greeting"></div>
+
+    <!-- Adding a song -->
+    <form id="addSong">
+        <h3>Add a Song</h3>
+        Title: <br>
+        <input type="text" id="titleInput" placeholder="Enter song title"><br><br>
+        Artist: <br>
+        <input type="text" id="artistInput" placeholder="Enter song artist"><br><br>
+        Year: <br>
+        <input type="number" id="yearInput" placeholder="Enter song year"><br><br>
+        Rating: <br>
+        <input type="number" id="ratingInput" placeholder="Enter personal rating"><br><br>
+        <input type= "submit" value="Save Song"><br><br>
+
+    </form>
+
+    <!-- Deleting a song -->
+     <form id="deleteSong">
+        <h3>Delete a Song</h3>
+        Song ID: <br>
+        <input type="text" id="deleteSongId" placeholder="Enter song ID to delete"><br><br>
+        <input type="submit" value="Delete Song"><br><br>
+     </form>
+
+     <!-- Update song rating -->
+      <form id="updateRating">
+        <h3>Update Song Rating</h3>
+        Song ID: <br>
+        <input type="text" id="updateSongId" placeholder="Enter song ID to update"><br><br>
+        New Rating: <br>
+        <input type="number" id="newRatingInput" placeholder="Enter new rating"><br><br>
+        <input type="submit" value="Update Rating"><br><br>
+      </form>
+
+    <h3>All Songs</h3>
+    <div id="songsContainer">
+        <table id="songsTable" border="1" style="width: 100%; margin: 0 auto;">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="profilemanager.bundle.js"></script>
+</body>
+</html>
